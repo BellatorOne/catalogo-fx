@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;700&family=Poppins:wght@700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pacotes FX</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+      background-color: #f0f4f8;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    h1 {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+      text-align: center;
+      color: #111827;
+      margin-bottom: 30px;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 20px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      overflow: hidden;
+      margin-bottom: 30px;
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: scale(1.01);
+    }
+
+    .card-header {
+      display: flex;
+      align-items: center;
+      padding: 15px;
+    }
+
+    .card-header img {
+      width: 80px;
+      height: 80px;
+      object-fit: cover;
+      border-radius: 12px;
+      margin-right: 15px;
+    }
+
+    .card-header h2 {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif; font-weight: 700;
+      margin: 0;
+      font-size: 1.2rem;
+    }
+
+    .card-content {
+      padding: 0 20px;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.5s ease;
+    }
+
+    .card-content p {
+      margin: 10px 0;
+    }
+
+    .highlight {
+      font-weight: bold;
+      color: #2563eb;
+    }
+
+    .price {
+      color: #059669;
+      font-weight: bold;
+    }
+
+    .card.scout .card-header h2 {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif; font-weight: 700; color: #2563eb; }
+    .card.ranger .card-header h2 {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif; font-weight: 700; color: #f59e0b; }
+    .card.commander .card-header h2 {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif; font-weight: 700; color: #dc2626; }
+
+    .toggle-btn {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      background: #f3f4f6;
+      border: none;
+      text-align: center;
+      color: #2563eb;
+      font-weight: bold;
+      cursor: pointer;
+      border-top: 1px solid #e5e7eb;
+    }
+
+    @media (max-width: 600px) {
+      .card-header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .card-header img {
+        margin-bottom: 10px;
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Pacotes FX</h1>
+
+    <div class="card scout">
+      <div class="card-header">
+        <img src="https://cdn.pixabay.com/photo/2017/06/12/09/00/drone-2391347_1280.jpg" alt="Drone Scout">
+        <h2>FX SCOUT – Exploração Inteligente</h2>
+      </div>
+      <div class="card-content">
+        <p><span class="highlight">Ideal para:</span> redes sociais, AirBnBs, imóveis simples, conteúdo comercial básico.</p>
+        <p><span class="highlight">Modos:</span> QuickShots (Dronie, Rocket, Circle, Helix), Estabilização automática.</p>
+        <p><span class="highlight">Incluso:</span> 1h, 8 fotos, 1 vídeo 45s com edição leve.</p>
+        <p><span class="highlight">Entrega:</span> até 2 dias úteis.</p>
+        <p class="price">R$ 500</p>
+      </div>
+      <button class="toggle-btn" aria-expanded="false">Ver Detalhes</button>
+    </div>
+
+    <div class="card ranger">
+      <div class="card-header">
+        <img src="https://cdn.pixabay.com/photo/2018/07/19/08/58/drone-3546714_1280.jpg" alt="Drone Ranger">
+        <h2>FX RANGER – Precisão e Estilo</h2>
+      </div>
+      <div class="card-content">
+        <p><span class="highlight">Ideal para:</span> casamentos, eventos, hotéis, vídeos promocionais.</p>
+        <p><span class="highlight">Modos:</span> MasterShots, FocusTrack, Hyperlapse básico.</p>
+        <p><span class="highlight">Incluso:</span> 2h30, 15 fotos tratadas, vídeo de 2min com trilha, efeitos e cor.</p>
+        <p><span class="highlight">Entrega:</span> até 4 dias úteis.</p>
+        <p class="price">R$ 1.200</p>
+      </div>
+      <button class="toggle-btn" aria-expanded="false">Ver Detalhes</button>
+    </div>
+
+    <div class="card commander">
+      <div class="card-header">
+        <img src="https://cdn.pixabay.com/photo/2020/02/16/15/01/drone-4853844_1280.jpg" alt="Drone Commander">
+        <h2>FX COMMANDER – Controle Total</h2>
+      </div>
+      <div class="card-content">
+        <p><span class="highlight">Ideal para:</span> campanhas, clipes, turismo de luxo.</p>
+        <p><span class="highlight">Modos:</span> MasterShots avançado, FocusTrack completo, Hyperlapse, Panorama, voo manual cinematográfico.</p>
+        <p><span class="highlight">Incluso:</span> 4h, 25 fotos HDR/artísticas, vídeo 3-5min com edição premium e animações.</p>
+        <p><span class="highlight">Entrega:</span> até 6 dias úteis.</p>
+        <p class="price">R$ 2.500 a R$ 3.500</p>
+      </div>
+      <button class="toggle-btn" aria-expanded="false">Ver Detalhes</button>
+    </div>
+  </div>
+
+  <script>
+    const buttons = document.querySelectorAll('.toggle-btn');
+    buttons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const card = btn.parentElement;
+        const content = card.querySelector('.card-content');
+
+        if (card.classList.contains('active')) {
+          content.style.maxHeight = '0px';
+          card.classList.remove('active');
+          btn.textContent = 'Ver Detalhes';
+          btn.setAttribute('aria-expanded', false);
+        } else {
+          content.style.maxHeight = content.scrollHeight + 'px';
+          card.classList.add('active');
+          btn.textContent = 'Ocultar';
+          btn.setAttribute('aria-expanded', true);
+        }
+      });
+    });
+  </script>
+</body>
+</html>
